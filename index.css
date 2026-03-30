@@ -1,0 +1,226 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* NAVBAR */
+nav {
+    background: #0f172a;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* HOME */
+#home {
+    text-align: center;
+    background: linear-gradient(to right, #38bdf8, #0ea5e9);
+    color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+#home h1 {
+    font-size: 36px;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+/* ABOUT (SIDE LAYOUT) */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+/* PHOTO */
+#about img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ABOUT TEXT */
+#about p {
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+/* EDUCATION */
+#education ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#education ul li {
+    background: #e0f2fe;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* SKILLS */
+.bar {
+    width: 80%;
+    background: #ddd;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.bar div {
+    height: 10px;
+    border-radius: 10px;
+}
+
+.html {
+    width: 90%;
+    background: #38bdf8;
+}
+
+.css {
+    width: 80%;
+    background: #0ea5e9;
+}
+
+.js {
+    width: 70%;
+    background: #0284c7;
+}
+
+/* GOALS */
+#goals {
+    text-align: center;
+    font-style: italic;
+}
+
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* CONTACT */
+form {
+    text-align: center;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #0ea5e9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0284c7;
+}
+
+/* FOOTER */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #home h1 {
+        font-size: 24px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about img {
+        width: 120px;
+        height: 120px;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    input, textarea {
+        width: 95%;
+    }
+}
